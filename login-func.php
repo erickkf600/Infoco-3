@@ -3,7 +3,7 @@
   $senha    = $_POST['senha'];
 
 
-  $con = mysqli_connect("localhost", "root", "", "infoco");
+  include "banco.php";
 
   $query = "select * from acesso where usuario = '$usuario' and senha = '$senha' limit 1";
 

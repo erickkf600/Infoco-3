@@ -53,10 +53,14 @@
   @include tablet-mini
     flex-flow: row wrap
   @include celular
-    justify-content: center   
+    justify-content: center  
   li
     @include tablet-mini
       padding: 0
+    @include celular-md
+      padding: 10px 
+      margin-bottom: 20px
+      width: 100%  
        
 .single-wc-content
   @extend %f-left
@@ -101,6 +105,49 @@
   padding-left: 85px
   padding-top: 20px
   width: 100%
+  .title-area
+    text-align: left
+    padding: 0px
+    .tittle
+      padding-bottom: 47px  
+      @include tablet-mini
+        padding-bottom: 10px
+        font-size: 28px
+    .tittle-line
+      height: 2px
+      margin-bottom: 35px
+      width: 100px
+    p
+      color: #535353
+      @extend %font
+      font-weight: 400 
+      margin-bottom: 32px  
+.about-btn-area
+  float: left
+  display: inline
+  margin-top: 14px
+  width: 100%
+  a
+    float: left 
+    display: block
+    border: none
+    padding: 10px 25px 10px 25px
+    @include tablet-mini
+      padding: 10px
+    @include celular-xs
+      padding: 3px   
+    background: none
+    @extend %color-laranja
+    border: solid 2px $laranja
+    @extend %t-3s
+    font: 
+      size: 18px
+      weight: bold
+    &:hover
+      text-decoration: none
+      @extend %color-branco
+      @extend %back-laranja  
+
 
   
 

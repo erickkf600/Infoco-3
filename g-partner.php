@@ -1,3 +1,13 @@
+<?php 
+  session_start();
+
+if(empty($_SESSION['usuario'])){
+  header("Location: index.php");
+  }else{
+    $usuario = $_SESSION['usuario']; 
+}
+
+?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -27,7 +37,7 @@
       <tbody id="myTable">
         <?php 
         include "banco.php";
-        $sql    = ("SELECT * FROM parceiros");
+        $sql    = ("SELECT * FROM parceiros where status = 'ativo'");
         $result = mysqli_query($con , $sql);
         while ($row = mysqli_fetch_array($result)) {
           $id   = $row['id'];
@@ -72,7 +82,7 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <form action="upload.php" method="post" enctype="multipart/form-data">
+                <form action="update-img.php" method="post" enctype="multipart/form-data">
                   <div class="modal-body">
                     <div class='input-wrapper'>
                       <input type="file" name="arquivos" id="foto" accept="image/jpeg, image/png, image/jpg" />

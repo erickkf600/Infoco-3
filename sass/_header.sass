@@ -71,18 +71,26 @@
   padding: 35px 15px !important
   @include tablet
     padding: 30px 5px !important
+
   
 .navbar-default .navbar-nav > li > a
   color: #636363
   @include transition(all 0.5s ease) 
 
-.search-area
-  @extend %d-inline-block  
+.search-area_bottom
+  @include celular
+    margin-top: 20px
+.search-area 
   float: right
   height: 60px
   padding: 0
+  right: 0
   @extend %p-relative
   width: 5%
+  @include celular
+    left: -3px
+    top: -100px
+    width: 3%     
   input[type="text"] 
     font:
       size: 20px
@@ -101,7 +109,7 @@
     @extend %back-transparent
     z-index: 3
     @include transition (width .7s cubic-bezier(0.000, 0.795, 0.000, 1.000))
-    cursor: pointer
+    cursor: pointer      
     &:focus
       width: 880px
       z-index: 1

@@ -58,13 +58,12 @@
         <li><a href="categoria.php?infocateg=alimentacao"><i class="fas fa-utensils"></i>Alimentação</a></li>
       </ul>
     </nav>
-    <nav class="navbar navbar-default main-navbar" role="navigation">  
+    <nav class="navbar navbar-default main-navbar">  
       <div class="container">
         <div class="navbar-header">
-          <!-- LOGO --> 
           <div class="sidebar-logo">
-            <div class="menu"><i class="fas fa-bars" title="Menu"></i></div>                                               
-            <a class="navbar-brand logo" href="index.php"><img src="intro.png" alt="InFoco"></a> 
+            <div class="menu"><i class="fas fa-bars" title="Menu"></i></div>
+            <a class="navbar-brand logo" href="index.php"><img src="intro.png" alt="InFoco"></a>
           </div>                     
         </div>
         <div id="navbar">
@@ -76,7 +75,7 @@
             <li><a href="partners-page.php" title="Novidades">PARCEIROS</a></li>             
             <li><a href="faq.php" title="Perguntas Frequentes">FAQ</a></li>              
           </ul>                            
-        </div><!--/.nav-collapse -->
+        </div>
         <div class="search-area">
           <form method="get" action="pesquisa.php">
             <input id="search" name="pesq" type="text" placeholder="Digite o que procura...">

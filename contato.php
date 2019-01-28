@@ -37,27 +37,56 @@
       <form action="mensagem.php" class="contact-form" method="post">
         <div class="row">
           <div class="col-md-6">
+            <?php 
+            if(!empty($_SESSION['nome_vazio'])){
+              echo "<small style='color: #f00; '>".$_SESSION['nome_vazio']."</small>";
+              unset($_SESSION['nome_vazio']);
+            }
+            ?>
             <div class="form-group">
-              <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+              <input type="text" class="form-control" name="nome" placeholder="Nome" >
             </div>
+            <?php 
+            if(!empty($_SESSION['email_vazio'])){
+              echo "<small style='color: #f00; '>".$_SESSION['email_vazio']."</small>";
+              unset($_SESSION['email_vazio']);
+            }
+            ?>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Email" >
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" >
             </div>
+            <?php 
+            if(!empty($_SESSION['telefone_vazio'])){
+              echo "<small style='color: #f00; '>".$_SESSION['telefone_vazio']."</small>";
+              unset($_SESSION['telefone_vazio']);
+            }
+            ?>
             <div class="form-group">
              <input type="text" class="form-control" name="telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="11" placeholder="Telefone" >
            </div>
+           <?php 
+            if(!empty($_SESSION['setor_vazio'])){
+              echo "<small style='color: #f00; '>".$_SESSION['setor_vazio']."</small>";
+              unset($_SESSION['setor_vazio']);
+            }
+            ?>
            <div class="form-group">
             <div class="select">
-              <select name="motivo" class="form-control">
+              <select name="motivo" class="form-control" >
                 <option selected disabled value="">Setor de Contato</option>
-                <option value="administrativo">Administrativo</option>
-                <option value="comercial" title="vendas, infommações, contratos">Comercial</option>
-                <option value="marketing">Marketing</option>
+                <option value="comercial" title="Torne-se nosso parceiro para expanção de seus negócios">Comercial</option>
+                <option value="administrativo" title="Duvidas, Sugestões, Criticas e Elogios">Administrativo</option>
               </select>
             </div>
           </div>
         </div>
         <div class="col-md-6">
+          <?php 
+            if(!empty($_SESSION['mensagem_vazio'])){
+              echo "<small style='color: #f00; '>".$_SESSION['mensagem_vazio']."</small>";
+              unset($_SESSION['mensagem_vazio']);
+            }
+            ?>
          <div class="form-group">
           <textarea class="form-control textarea-contact" rows="5" name="mensagem" placeholder="Digite sua mensagem aqui..." ></textarea>
         </div>
@@ -72,7 +101,19 @@
       ?>
     </div>
     <div class="form-group" id="enviar-btn">
-     <button class="btn btn-block" type="submit">ENVIAR<span class="glyphicon glyphicon-send"></span></button>
+     <button class="btn btn-block" type="submit" id="enviarMensagem">ENVIAR<span class="glyphicon glyphicon-send"></span></button>
+<?php 
+  if(!empty($_SESSION['email_enviado'])){
+        echo "<p style='color: #01ad01; '>".$_SESSION['email_enviado']."</p>";
+        unset($_SESSION['email_enviado']);
+  }else{
+    if(!empty($_SESSION['email_erro'])){
+      echo "<p style='color: #f00; '>".$_SESSION['email_erro']."</p>";
+      unset($_SESSION['email_erro']);
+    }
+  }
+  
+ ?>
    </div>
  </div>
 </form>
@@ -86,7 +127,8 @@
         <div class="info">
           <h3 class="title">EMAIL</h3>
           <p>
-            contato@incofomn.com.br
+            administrativo@incofomn.com.br
+            comercial@incofomn.com.br
           </p>
         </div>
       </div>

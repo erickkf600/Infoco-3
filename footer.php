@@ -54,6 +54,6 @@
   </div>
   <div class="text-center sub-footer">
     <p>Copyright © <a href="licenca.xml" target="_blank">Direitos autorais</a> 2019 | InFoco | Desenvolvido por 
-      <a href="mailto:erickkf600@gmail.com">Erick Ferreira<a>
+      <a href="mailto:erickkf600@gmail.com">Erick Ferreira</a>
       </div>
     </div>

@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-  <meta name="description" content="InFoco Publicidade, infocomn, publicidade, infoco, InFoco, marketing, erick ferreira, mn, empresarial, plataforma comercial, comercios, parceiros">
   <meta name="author" content="Erick Ferreira">
   <meta name="google-site-verification" content="VEPmj7vef9AH59emCHJnJ2tNlZYxiEbAjlAjU1UKuRI" />
   <title>InFoco Publicidade</title>
@@ -13,11 +12,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>  
-  <link id="switcher" href="css/theme-color/orange-theme.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/> 
 
-  <link href="css/preloader.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min.css" rel="stylesheet">
   <link href="css/core.css" rel="stylesheet">
 </head>
 <body class="sobre-body">
@@ -26,10 +23,8 @@
   <div id="preloader">
     <div class="loader">&nbsp;</div>
   </div>
-  <!-- SCROLL TOP BUTTON -->
   <a class="scrollToTop" href="#"><i class="fas fa-chevron-up"></i></a> 
   <header id="header"><?php include "header-for-all.php" ?></header>
-
   <main>
     <section id="sobre">
       <div class="container" id="container">

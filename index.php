@@ -1,6 +1,6 @@
 <?php 
   include "banco.php";
-  $busca = "SELECT * from parceiros where primeiraPagina = 'sim' limit 8";
+  $busca = "SELECT * from parceiros where primeiraPagina = 'sim' and status = 'ativo' limit 8";
   $iten = mysqli_query($con, $busca);
  ?>
 <!DOCTYPE html>
@@ -18,12 +18,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>  
-  <link id="switcher" href="css/theme-color/orange-theme.css" rel="stylesheet">
-
-  <link href="css/preloader.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/core.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>  
+  <link rel="stylesheet" type="text/css" href="css/min.css">
+  <link href="css/core.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

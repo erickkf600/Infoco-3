@@ -1,14 +1,13 @@
 /**	
 	Custom JS
-	
-	1. FIXED MENU
-	2. CLIENT SLIDE (SLICK SLIDER)
-	3. SCROLL TOP BUTTON 
-	4. SIDE BAR
-	5. PRELOADER 
-	6. WOW ANIMATION 	
-	7. BUSCA CEP 	
-	
+	1. SLIDE COMERCIAL
+	2. FIXED MENU
+	3. CLIENT SLIDE (SLICK SLIDER)
+	4. SCROLL TOP BUTTON 
+	5. SIDE BAR
+	6. PRELOADER 
+	7. WOW ANIMATION 	
+	8. BUSCA CEP 
 	**/
 
 	jQuery(function($){
@@ -43,6 +42,7 @@
 			$('.main-navbar').addClass('navbar-fixed-top');
 			$('.logo').addClass('logo-compressed');
 			$('.main-nav li a').addClass('less-padding');
+			$('.search-area').addClass('search-area_bottom');
 			$('.search-area').css('height','44');
 			$('.search-area input[type="text"]').css('top','35%');
 
@@ -51,6 +51,7 @@
 			$('.main-navbar').removeClass('navbar-fixed-top');
 			$('.logo').removeClass('logo-compressed');
 			$('.main-nav li a').removeClass('less-padding');
+			$('.search-area').removeClass('search-area_bottom');
 			$('.search-area').css('height','60');
 			$('.search-area input[type="text"]').css('top','11%');
 		}
@@ -215,7 +216,5 @@
             limpa_formulário_cep();
         }
     };
-
-
 
 

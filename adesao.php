@@ -2,21 +2,17 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-  <meta name="description" content="InFoco Publicidade, infocomn, publicidade, infoco, InFoco, marketing, erick ferreira, mn, empresarial, plataforma comercial, comercios, parceiros">
-  <meta name="author" content="Erick Ferreira">
-  <meta name="google-site-verification" content="VEPmj7vef9AH59emCHJnJ2tNlZYxiEbAjlAjU1UKuRI" />
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport"content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+  <meta name="description"content="InFocoPublicidade,infocomn,publicidade,infoco,InFoco,marketing,erickferreira,mn,empresarial,plataformacomercial,comercios,parceiros">
+  <meta name="author"content="Erick Ferreira">
+  <meta name="google-site-verification"content="VEPmj7vef9AH59emCHJnJ2tNlZYxiEbAjlAjU1UKuRI" />
   <title>InFoco Publicidade</title>
-  <link rel="shortcut icon" href="icon.png">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>  
-  <link id="switcher" href="css/theme-color/orange-theme.css" rel="stylesheet">
-
-  <link href="css/preloader.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon"href="icon.png">
+  <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/> 
+  <link href="css/min.css" rel="stylesheet">
   <link href="css/core.css" rel="stylesheet">
 </head>
 <body class="adesao-body">

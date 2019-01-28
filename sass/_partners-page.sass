@@ -1,9 +1,12 @@
+
 #partners
   background: #f8f8f8
   @extend %d-inline
   @extend %f-left
   padding: 70px 0
   width: 100%
+  @include celular
+    float: none
 
 .area
   @extend %d-inline
@@ -56,6 +59,13 @@
     padding-bottom: 0
     padding-left: 29px
     padding-top: 0
+  .intagram-title
+    display: flex
+    justify-content: space-between
+    a
+      &:hover
+        text-decoration: none
+        @extend %color-laranja 
     
 .insere-texto    
   @extend %d-inline

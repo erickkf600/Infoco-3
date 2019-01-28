@@ -23,7 +23,7 @@
         <li><a href="categoria.php?infocateg=alimentacao"><i class="fas fa-utensils"></i>Alimentação</a></li>
       </ul>
     </nav>
-    <nav class="navbar navbar-default main-navbar" role="navigation">  
+    <nav class="navbar navbar-default main-navbar">  
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->

@@ -5,7 +5,7 @@ include "banco.php";
 $pagina = (isset($_GET['pagina']))? $_GET['pagina'] : 1;
 
 //Selecionar todos os itens da tabela
-$busca = "SELECT * from parceiros";
+$busca = "SELECT * from parceiros where status = 'ativo'";
 $iten = mysqli_query($con, $busca);
 
 //Contar o total de itens
@@ -40,14 +40,12 @@ $total = mysqli_num_rows($iten);
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/animate.css"/>  
-  <link id="switcher" href="css/theme-color/orange-theme.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>    
 
-  <link href="css/preloader.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/min.css">
   <link href="css/core.css" rel="stylesheet">
 </head>
-<body>
+<body class="body-partner">
 
   <!-- CARREGAMENTO -->
   <div id="preloader">
@@ -108,18 +106,18 @@ $total = mysqli_num_rows($iten);
                        <?php } ?>
                      </li>
                      <?php for($i = 1; $i < $num_pagina + 1; $i++){ ?>
-                        <li>
-                          <a href="partners-page.php?pagina=<?php echo $i ?>"><?php echo $i ?></a>
-                        </li>
-                     <?php } ?>
-                     <li>
+                      <li>
+                        <a href="partners-page.php?pagina=<?php echo $i ?>"><?php echo $i ?></a>
+                      </li>
+                    <?php } ?>
+                    <li>
                       <?php if($pagina_posterior <= $num_pagina){ ?>
-                      <a href="partners-page.php?pagina=<?php echo $pagina_posterior ?>" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    <?php }else{ ?>
-                      <span class="hidden"></span>
-                    <?php } ?>  
+                        <a href="partners-page.php?pagina=<?php echo $pagina_posterior ?>" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      <?php }else{ ?>
+                        <span class="hidden"></span>
+                      <?php } ?>  
                     </li>
                   </ul>
                 </nav>
@@ -136,7 +134,10 @@ $total = mysqli_num_rows($iten);
                   </div>
 
                   <div class="direita-cont">
-                    <h2>Instagram Posts</h2>
+                    <div class="intagram-title">
+                      <h2>Instagram Posts</h2>
+                      <a href="https://www.instagram.com/infocopublicidadepl/" target="_black">seguir</a>
+                    </div>
                     <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/d8b365292b955736b88d4eca9d826c80.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> 
                   </div>
                   <!-- SCRIPT FACEBOOK -->

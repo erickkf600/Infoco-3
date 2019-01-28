@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
   <link href="css/preloader.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/core.css" rel="stylesheet">
 </head>
 <body>

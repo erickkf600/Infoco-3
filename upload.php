@@ -34,7 +34,7 @@ if (array_search($extensao, $_UP['extensoes']) === false) {
 }
 // Faz a verificação do tamanho do arquivo
 if ($_UP['tamanho'] < $_FILES['arquivos']['size']) {
-  echo "O arquivo enviado é muito grande, envie arquivos de até 2Mb.";
+  echo "O arquivo enviado é muito grande, envie arquivos de até 100KB.";
   exit;
 }
 // O arquivo passou em todas as verificações, hora de tentar movê-lo para a pasta
@@ -42,8 +42,7 @@ if ($_UP['tamanho'] < $_FILES['arquivos']['size']) {
 if ($_UP['renomeia'] == true) {
   // Cria um nome baseado no UNIX TIMESTAMP atual e com extensão .png
   include "banco.php";
-  $id = $_POST['id'];
-  $query = "select * from parceiros where id = $id limit 1";
+  $query = "select * from parceiros order by id desc limit 1";
   $consulta = mysqli_query($con, $query);
   if($p = mysqli_fetch_array($consulta)){
     $id = $p['id'];

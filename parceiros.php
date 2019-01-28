@@ -21,7 +21,7 @@
             <div class="cards col-md-3 col-sm-6 col-xs-6">
               <div class="cards-item">
                 <div class="card">
-                  <div class="card-image"><img src="img/parceiros/<?php echo $img ?>" width="100%"></div>
+                  <div class="card-image"><img src="img/parceiros/<?php echo $img ?>" width="100%" alt="parceiro-imagem"></div>
                   <div class="card-content">
                     <div class="card-title"><?php echo $nome ?></div>
                     <a href="<?php echo $url ?>" target="_blank" class="btn btn-block card-btn">Visitar</a>
